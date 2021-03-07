@@ -26,7 +26,7 @@ public class HeartRate {
         System.out.println("Your estimated target heart rate zone is " + minTargetHeartRate + " - " + maxTargetHeartRate
                 + " beats per minute.");
 
-        // close the scanner
+        // It's always best practice to close the scanner
         scan.close();
     } // end of method main
 } // end of class HeartRate

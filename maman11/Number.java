@@ -36,22 +36,22 @@ class Number {
                 // reverse number if needed
                 if (option == OPTION_REVERSE_NUMBER || option == OPTION_REVERSE_BOTH) {
                     // division will return the number of thousands in the number.
-                    int digit1 = number / 1000;
+                    int digitOf1000s = number / 1000;
                     /*
                      * the divison will return the number of 100s in the number. the 100s digit only
                      * contains the division remaint of them by 10.
                      */
-                    int digit2 = (number / 100) % 10;
+                    int digitOf100s = (number / 100) % 10;
                     /*
                      * The division will return the number of tens in then number. The 10s digit
                      * only contains the division remaint of them by 10.
                      */
-                    int digit3 = (number / 10) % 10;
+                    int digitOf10s = (number / 10) % 10;
                     /*
                      * expression will return the division remaint of the number by 10: the last
                      * digit of the number.
                      */
-                    int digit4 = number % 10;
+                    int digitOf1s = number % 10;
 
                     /*
                      * reverse the number with this algorithm:
@@ -63,7 +63,7 @@ class Number {
                      * digit becomes the 10s digit by multipliying it by 10.
                      *
                      */
-                    number = 1000 * digit4 + 100 * digit3 + 10 * digit2 + digit1;
+                    number = 1000 * digitOf1s + 100 * digitOf10s + 10 * digitOf100s + digitOf1000s;
 
                 }
                 System.out.println("The result is");

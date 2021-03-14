@@ -20,8 +20,9 @@ class Number {
         // hold the integer code of the option picked.
         int option;
 
-        // get the number as an integer from the program user
         Scanner scan = new Scanner(System.in);
+
+        // get the number as an integer from the program user
         System.out.print("Plase enter a 4 digit number: ");
         number = scan.nextInt();
 

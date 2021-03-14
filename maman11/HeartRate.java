@@ -1,5 +1,8 @@
 import java.util.Scanner;
 
+/*
+* The program gets an age integer input from the user and calculates the target heart rate range using the age.
+*/
 public class HeartRate {
     public static void main(String[] args) {
         final int CONST = 220;
@@ -28,5 +31,5 @@ public class HeartRate {
 
         // It's always best practice to close the scanner
         scan.close();
-    } // end of method main
-} // end of class HeartRate
+    }
+}

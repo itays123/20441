@@ -17,7 +17,7 @@ class Number {
          */
         int number;
 
-        // hold the integer code of the option picked.
+        // holds the integer code of the option picked.
         int option;
 
         Scanner scan = new Scanner(System.in);
@@ -78,9 +78,6 @@ class Number {
         } else { // number is not valid
             System.out.println("Illegal number – you must enter a 4 digit number");
         }
-
-        // close the scanner
-        scan.close();
     }
 
 }
